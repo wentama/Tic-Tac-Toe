@@ -1,0 +1,129 @@
+.board {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 5px;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+}
+
+.ySquare {
+  background: rgba(255, 255, 255, 0.829);
+  color: rgba(235, 151, 214, 0.904);
+  border: 5px solid rgba(150, 150, 156, 0.877);
+  font-size: 50px;
+  font-weight: 800;
+  font-family: 'Comic Sans MS', Consolas, monospace;
+  cursor: pointer;
+  outline: none;
+}
+
+.wSquare {
+  background: rgba(255, 255, 255, 0.829);
+  color: rgba(56, 211, 159, 0.904);
+  border: 5px solid rgba(150, 150, 156, 0.877);
+  font-size: 50px;
+  font-weight: 800;
+  font-family: 'Comic Sans MS', Consolas, monospace;
+  cursor: pointer;
+  outline: none;
+}
+
+.ySquare:hover {
+  box-shadow: 0px 0px 15px rgb(116, 182, 236);
+  background-color: rgba(241, 214, 241, 0.904);
+}
+
+.wSquare:hover {
+  box-shadow: 0px 0px 15px rgb(116, 182, 236);
+  background-color: rgba(169, 241, 217, 0.904);
+}
+
+.scoreBoard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 2rem auto;
+  justify-content: space-evenly;
+  width: 20rem;
+  font-size: 25px;
+  background-color: white;
+  box-shadow: 0px 0px 15px rgb(116, 182, 236);
+  border-radius: 25px;
+  font-weight: 800;
+  font-family: 'Comic Sans MS', Consolas, monospace;
+}
+
+.score {
+  width: 100%;
+  text-align: center;
+  padding: 1em;
+}
+
+.yScore {
+  color: rgba(235, 151, 214, 0.904);
+  border: 5px solid rgba(235, 151, 214, 0.904);
+  border-radius: 25px 0 0 25px;
+  background-color: rgba(241, 229, 241, 0.904);;
+}
+
+.wScore {
+  color: rgba(56, 211, 159, 0.904);
+  border: 5px solid rgba(56, 211, 159, 0.904);
+  border-radius: 0 25px 25px 0;
+  background-color: rgba(229, 241, 237, 0.904);
+}
+
+.inactive {
+  border: 5px solid transparent;
+  background-color: white;
+}
+
+.optionButtons {
+  text-align: center;
+  padding: 2em;
+}
+
+.buttons {
+  background-color:rgb(174, 214, 247);
+  padding: 10px;
+  font-family: 'Comic Sans MS', Consolas, monospace;
+  font-weight: 200;
+  font-size: 15px;
+  border-radius: 20px;
+}
+
+.buttons:hover {
+  box-shadow: 0px 0px 15px rgb(116, 182, 236);
+  background-color: rgba(169, 241, 217, 0.904);
+}
+
+.yEndScreen {
+  font-family: 'Comic Sans MS', Consolas, monospace;
+  font-weight: 800;
+  font-size: 50px;
+  color: rgba(233, 135, 208, 0.904);
+  background-color: rgba(241, 214, 241, 0.904);
+  padding: 50px
+}
+
+.wEndScreen {
+  font-family: 'Comic Sans MS', Consolas, monospace;
+  font-weight: 800;
+  font-size: 50px;
+  color: rgba(24, 196, 139, 0.904);
+  background-color: rgba(169, 241, 217, 0.904);
+  padding: 50px
+}
+
+.drawScreen {
+  font-family: 'Comic Sans MS', Consolas, monospace;
+  font-weight: 800;
+  font-size: 40px;
+  color: rgb(65, 156, 231);
+  background-color: rgb(174, 214, 247);
+  padding: 50px
+}
+
+
+
